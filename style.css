@@ -295,3 +295,25 @@ body::after {
   font-size: 18px;
   color: white;
 }
+
+/* ── Outer Container ───────────────────────────── */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Make app look like a card */
+#app {
+  width: 100%;
+  max-width: 640px;
+  background: var(--surface);
+  border-radius: 28px;
+  padding: 2.5rem 2rem;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.08),
+    0 4px 10px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border);
+}
