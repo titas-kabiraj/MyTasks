@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Tasks</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.30.0/iconfont/tabler-icons.min.css"/>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<div id="app">
+
+  <!-- Header -->
+  <div class="app-header">
+    <div class="app-eyebrow">Today's Focus</div>
+    <div class="app-title">My Tasks</div>
+    <div class="app-subtitle" id="date-label"></div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-label">Total</div>
+      <div class="stat-value" id="stat-total">0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Done</div>
+      <div class="stat-value" id="stat-done">0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Left</div>
+      <div class="stat-value" id="stat-remaining">0</div>
+    </div>
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-wrap">
+    <div class="progress-meta">
+      <span>Progress</span>
+      <span id="progress-pct">0%</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- Input -->
+  <div class="input-area">
+    <i class="ti ti-pencil"></i>
+    <input type="text" id="task-input" placeholder="Add a new task…" maxlength="120" />
+    <select id="category-select">
+      <option value="work">Work</option>
+      <option value="personal">Personal</option>
+      <option value="urgent">Urgent</option>
+      <option value="health">Health</option>
+      <option value="other">Other</option>
+    </select>
+    <button class="add-btn" id="add-btn">
+      <i class="ti ti-plus"></i> Add
+    </button>
+  </div>
+
+  <!-- Filters -->
+  <div class="filter-row">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="active">Active</button>
+    <button class="filter-btn" data-filter="done">Done</button>
+    <button class="filter-btn" data-filter="work">Work</button>
+    <button class="filter-btn" data-filter="personal">Personal</button>
+    <button class="filter-btn" data-filter="urgent">Urgent</button>
+    <button class="filter-btn" data-filter="health">Health</button>
+  </div>
+
+  <!-- Task List -->
+  <div class="todo-list" id="todo-list"></div>
+
+  <!-- Footer -->
+  <div class="app-footer">✦Crafted with love by TITAS✦</div>
+
+</div>
+
+<!-- External JS -->
+<script src="script.js"></script>
+</body>
+</html>
