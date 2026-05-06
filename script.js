@@ -46,8 +46,8 @@ function render() {
   } else {
     list.innerHTML = filtered.map(t => `
       <div class="todo-item ${t.done ? 'done' : ''}">
-        <button data-toggle="${t.id}">
-          ${t.done ? '✔' : ''}
+        <button class="todo-check ${t.done ? 'checked' : ''}" data-toggle="${t.id}">
+       ${t.done ? '<i class="ti ti-check"></i>' : ''}
         </button>
 
         <span class="todo-text">${escHtml(t.text)}</span>

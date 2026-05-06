@@ -260,3 +260,38 @@ body::after {
   font-size: 12px;
 }
 
+/* Checkbox (Improved) */
+.todo-check {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2.5px solid var(--peach-sorbet);
+  background: white;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.todo-check:hover {
+  border-color: var(--sunset-fizz);
+  transform: scale(1.1);
+}
+
+/* When checked */
+.todo-check.checked {
+  background: linear-gradient(135deg, var(--sunset-fizz), var(--rosy-glow));
+  border-color: transparent;
+  transform: scale(1.05);
+}
+
+/* Check icon */
+.todo-check i {
+  font-size: 18px;
+  color: white;
+}
