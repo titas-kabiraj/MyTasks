@@ -36,6 +36,8 @@ body {
   color: var(--text-primary);
   position: relative;
   overflow-x: hidden;
+  background-image: url(bgimage.jpg);
+  background-size: contain;
 }
 
 /* Background blobs */
@@ -78,7 +80,7 @@ body::after {
 .app-header { margin-bottom: 2.25rem; }
 
 .app-eyebrow {
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--sunset-fizz);
@@ -88,10 +90,11 @@ body::after {
   font-family: 'Playfair Display', serif;
   font-size: 38px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .app-subtitle {
-  font-size: 14px;
+  font-size: 18px;
   color: var(--text-secondary);
 }
 
@@ -112,8 +115,9 @@ body::after {
 }
 
 .stat-label {
-  font-size: 11px;
+  font-size: 18px;
   color: var(--text-hint);
+  font-weight: 400;
 }
 
 .stat-value {
@@ -127,7 +131,8 @@ body::after {
 .progress-meta {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 .progress-bar {
@@ -303,6 +308,7 @@ body::after {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  
 }
 
 /* Make app look like a card */
@@ -316,4 +322,5 @@ body::after {
     0 20px 40px rgba(0, 0, 0, 0.08),
     0 4px 10px rgba(0, 0, 0, 0.04);
   border: 1px solid var(--border);
+  background-color: #ffd0dee6;
 }
