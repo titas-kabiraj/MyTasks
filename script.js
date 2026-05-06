@@ -1,12 +1,7 @@
-let tasks = [
-  { id: 1, text: 'Review project proposal', category: 'work', done: false },
-  { id: 2, text: 'Schedule dentist appointment', category: 'health', done: false },
-  { id: 3, text: 'Buy groceries', category: 'personal', done: true },
-  { id: 4, text: 'Submit quarterly report', category: 'urgent', done: false }
-];
+let tasks = [];
 
 let filter = 'all';
-let nextId = 5;
+let nextId = 1;
 
 /* Date */
 document.getElementById('date-label').textContent =
